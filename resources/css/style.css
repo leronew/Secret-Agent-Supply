@@ -1,18 +1,137 @@
 html {
-  font-size: 18px;
   color: #fff;
-}
-
-#logo {
-  height: 1.5rem;
-  width: 1.5rem;
-  border: 1px solid red;
 }
 
 .black-background {
   background-color: #000;
 }
 
+.main{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  height: 1.5rem;
+  width: auto;
+  margin: auto 0.5rem auto 0.5rem;
+}
+
+#title {
+  margin: auto auto auto 0.5rem;
+}
+
+header {
+  width: 53.33rem;
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
 .container {
-  width: 960px;
+  max-width: 53.33rem;
+  margin: auto;
+}
+
+.banner {
+  background-image: url(../images/banner-background.jpeg);
+  background-size: cover;
+  height: 25rem;
+}
+
+.new-arrival{
+  margin-top: 9rem;
+  width: 20rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 2rem 3rem;
+}
+
+.new-arrival :first-child{
+font-size: 1rem;
+margin-bottom: 0.25rem;
+}
+
+.new-arrival :nth-child(2){
+  font-size: 2rem;
+}
+
+ul{
+    margin: 0.75rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar{
+  background-color: firebrick;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  height: 15rem;
+  border: 4px solid #000;
+}
+
+.item img {
+  height: auto;
+  max-width: 8rem;
+  margin: auto;
+}
+
+.items-for-sale .container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-name span{
+  margin: auto;
+}
+
+.item-name{
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.white-background{
+  background-color: #fff;
+}
+
+.items-for-sale{
+  padding-top: 3rem;
+}
+
+.location{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.location :nth-child(2){
+  color: #000;
+}
+
+.information{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+#info{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer{
+  height: 5rem;
+}
+
+footer span{
+  margin-top: 2.5rem;
+  float: left;
 }

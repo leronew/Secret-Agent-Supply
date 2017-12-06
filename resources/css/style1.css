@@ -1,0 +1,9 @@
+html {
+  font-size: 18px;
+  color: #000;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 960px) 1fr;
+}
