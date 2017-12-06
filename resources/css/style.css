@@ -2,17 +2,22 @@ html {
   color: #fff;
 }
 
-.black-background {
-  background-color: #000;
-}
-
 .main{
   font-size: 18px;
   flex-direction: column;
 }
 
+.black-background {
+  background-color: #000;
+}
+
 .flex{
   display: flex;
+}
+
+.container {
+  max-width: 53.33rem;
+  margin: auto;
 }
 
 #logo {
@@ -31,11 +36,6 @@ header {
   margin-bottom: 0.66rem;
 }
 
-.container {
-  max-width: 53.33rem;
-  margin: auto;
-}
-
 .banner {
   background-image: url(../images/banner-background.jpeg);
   background-size: cover;
@@ -43,7 +43,6 @@ header {
 }
 
 .new-arrival{
-  flex-direction: column;
   margin-top: 9rem;
   width: 20rem;
   font-family: Helvetica;
@@ -52,21 +51,33 @@ header {
 }
 
 .new-arrival :first-child{
-font-size: 1rem;
-margin-bottom: 0.25rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .new-arrival :nth-child(2){
   font-size: 2rem;
 }
 
-ul{
-    margin: 0.75rem auto;
-    justify-content: space-between;
-}
-
 .nav-bar{
   background-color: firebrick;
+}
+
+.nav-bar ul{
+  margin: 0.75rem auto;
+  justify-content: space-between;
+}
+
+.items-for-sale{
+  padding-top: 3rem;
+}
+
+.items-for-sale .container{
+  justify-content: space-around;
+}
+
+.white-background{
+  background-color: #fff;
 }
 
 .item {
@@ -83,34 +94,14 @@ ul{
   margin: auto;
 }
 
-.items-for-sale .container{
-  justify-content: space-around;
+.item-name{
+  width: 100%;
+  padding: 0.5rem 0;
+  clear: left;
 }
 
 .item-name span{
   margin: auto;
-}
-
-.item-name{
-  width: 100%;
-  padding: 0.5rem 0;
-}
-
-.white-background{
-  background-color: #fff;
-}
-
-.items-for-sale{
-  padding-top: 3rem;
-}
-
-.location{
-  width: 35%;
-  flex-direction: column;
-}
-
-.location :nth-child(2){
-  color: #000;
 }
 
 .information{
@@ -119,10 +110,19 @@ ul{
   margin-bottom: 4rem;
 }
 
-#info{
+#hours, #location{
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.business-info{
+  width: 35%;
+  flex-direction: column;
+}
+
+.business-info :nth-child(2){
+  color: #000;
 }
 
 footer{
@@ -132,4 +132,10 @@ footer{
 footer span{
   margin-top: 2.5rem;
   float: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 47%;
+  } 
 }
