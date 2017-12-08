@@ -59,13 +59,21 @@ header {
   font-size: 2rem;
 }
 
-.nav-bar{
+.nav{
   background-color: firebrick;
 }
 
-.nav-bar ul{
+.bar1 ul{
   margin: 0.75rem auto;
   justify-content: space-between;
+}
+
+.bar2{
+  display: none;
+}
+
+.bar2 ul{
+  margin: 0.75rem auto;
 }
 
 .items-for-sale{
@@ -127,15 +135,65 @@ header {
 
 footer{
   height: 5rem;
+  display: flex;
 }
 
 footer span{
   margin-top: 2.5rem;
-  float: left;
 }
 
 @media only screen and (max-width: 1024px) {
   .item {
-    width: 47%;
-  } 
+    min-width: 47%;
+  }
+
+  .bar1 {
+    display: none;
+  }
+
+  .bar2 {
+    display: flex;
+  }
+
+  .items-for-sale .container :nth-child(3){
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .new-arrival{
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    font-size: 0.77rem;
+  }
+
+  .new-arrival :first-child{
+    font-size: 0.77rem;
+  }
+
+  .new-arrival :nth-child(2){
+    font-size: 1rem;
+  }
+
+  .item {
+    min-width: 90%;
+  }
+
+  .items-for-sale .container :nth-child(3),
+  .items-for-sale .container :nth-child(2){
+  display: none;
+  }
+
+  .information{
+    flex-direction: column;
+  }
+
+  .business-info{
+    width: 90%;
+    margin: 1rem;
+  }
 }
